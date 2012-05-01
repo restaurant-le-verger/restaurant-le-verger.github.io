@@ -353,7 +353,8 @@ FileETag None
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
-  
+  RewriteRule ^tag/(.*)$ http://restaurant-leverger.fr/index.html [R=permanent,L]
+
   RedirectPermanent /informations-pratiques http://restaurant-leverger.fr/infos.html
   RedirectPermanent /une-cuisine-traditionnelle-francaise http://restaurant-leverger.fr/carte.html
   RedirectPermanent /un-restaurant-calme-pour-vos-sorties-en-couple-en-famille-ou-entre-amis http://restaurant-leverger.fr/index.html
@@ -363,24 +364,10 @@ FileETag None
   RedirectPermanent /lhistoire-de-la-guinguette http://restaurant-leverger.fr/index.html
   RedirectPermanent /mentions-legales http://restaurant-leverger.fr/mentions-legales.html
   RedirectPermanent /la-carte http://restaurant-leverger.fr/carte.html
-  RedirectPermanent /tag/jardin http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/restaurant http://restaurant-leverger.fr/index.html
   RedirectPermanent /contact/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/histoire http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/bords-de-marne http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/ouverture/feed http://restaurant-leverger.fr/index.html
   RedirectPermanent /une-cuisine-traditionnelle-francaise/feed http://restaurant-leverger.fr/carte.html
   RedirectPermanent /un-restaurant-calme-pour-vos-sorties-en-couple-en-famille-ou-entre-amis/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/terrasse http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/terrasse/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/restaurant/feed http://restaurant-leverger.fr/infos.html
-  RedirectPermanent /tag/reouverture/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/portes-de-paris/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/paques/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/historique http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/cuisine http://restaurant-leverger.fr/carte.html
   RedirectPermanent /livre-or/?gb_page=write http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/calme/feed http://restaurant-leverger.fr/index.html
   RedirectPermanent /ouverture-le-lundi-25-avril-2011/feed http://restaurant-leverger.fr/index.html
   RedirectPermanent /ouverture-de-la-saison/feed http://restaurant-leverger.fr/index.html
   RedirectPermanent /ouvert-le-jeudi-2-juin-2011/feed http://restaurant-leverger.fr/index.html
@@ -388,14 +375,8 @@ FileETag None
   RedirectPermanent /lhistoire-de-la-guinguette/feed http://restaurant-leverger.fr/index.html
   RedirectPermanent /la-carte/feed http://restaurant-leverger.fr/carte.html
   RedirectPermanent /informations-pratiques/feed http://restaurant-leverger.fr/infos.html
-  RedirectPermanent /tag/nogent-sur-marne http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/calme http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/guinguette http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/ferie http://restaurant-leverger.fr/index.html
   RedirectPermanent /la-detente-au-coeur-dun-%C2%AB-verger-%C2%BB/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/bords-de-marne/feed http://restaurant-leverger.fr/index.html
   RedirectPermanent /livre-or?gb_page=read http://restaurant-leverger.fr/index.html
-  RedirectPermanent /tag/paques http://restaurant-leverger.fr/index.html
   RedirectPermanent /livre-or/?gb_page=read http://restaurant-leverger.fr/index.html
 </IfModule>
 # ----------------------------------------------------------------------
