@@ -1,0 +1,13 @@
+User-Agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /img/maps
+Disallow: /img/sprite.png
+Disallow: /img/logo.png
+Disallow: /img/bckgd-tree.png
+Disallow: /img/bckgd.png
+Disallow: /img/glyphicons-halflings-white.png
+Disallow: /img/glyphicons-halflings.png
+Disallow: /mentions-legales.html
+
+Sitemap: http://restaurant-leverger.fr/sitemap.xml.gz

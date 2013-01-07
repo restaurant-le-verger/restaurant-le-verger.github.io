@@ -1,0 +1,152 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Restaurant LE VERGER - la guinguette de Nogent-sur-Marne</title>
+	<meta name="description" content="Vous rêvez de déjeuner ou de dîner dans un jardin ou sur une terrasse ? Loin de l'agitation de Paris mais à proximité ? Notre restaurant situé en bord de marne satisfera votre besoin de détente.">
+  <meta name="keywords" content="piscine-hôtel, verdure, sortir, Paris">
+	<meta name="author" content="Pierrick CAEN">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+</head>
+<body onload="initialize()">
+<!--[if lt IE 7]><p class=chromeframe>Votre navigateur est <em>ancien!</em> <a href="http://browsehappy.com/">Mettez à jour votre navigateur</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">installer Google Chrome Frame</a> pour accèder à ce site.</p><![endif]-->
+  <div id="wrapper">
+    <div class="container">
+      <header class="row">
+        <div class="span5">
+          <a class="brand" href="index.html"><img src="img/logo.png" alt="LE VERGER"></a>
+          <h1>Un jardin à proximité de Paris</h1>
+        </div>
+        <div class="span7">
+          <nav role="navigation" class="hidden-phone">
+            <ul id="nav_top">
+              <li><a href="index.html">le restaurant</a></li>
+              <li><a href="carte.html">la carte</a></li>
+              <li class="active"><a href="infos.html">informations pratiques</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div id="content">
+        <h2>Informations pratiques</h2>
+        <div class="row">
+          <div class="span6">
+            <h3>Adresse, téléphone</h3>
+            <address>
+              10, quai du port<br />
+              94130 Nogent-sur-Marne<br />
+              <a href="tel:0148711879">01 48 71 17 43</a>
+            </address>
+            <h3>Horaires d'ouverture</h3>
+            <p>
+              Les jeudi soir et vendredi soir : ouvert 19h à 22h30.<br />
+              Le samedi, dimanche, et jours fériés : ouvert toute la journée.<br />
+              <span class="label label-success">Le restaurant est ouvert d'avril à septembre.</span>
+            </p>
+          </div>
+          <div class="span6 hidden-phone">
+            <div class="hidden-phone" id="qr-code">
+              <i class="sprite qr-code">QR-Code</i>
+              <span class="label">Scannez ce code pour nous contacter.</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <h3>Informations</h3>
+            <ul>
+              <li>Par beau temps, nous vous recommandons de reserver par téléphone.</li>
+              <li>Les cartes bancaires ne sont pas acceptées.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span6">
+            <h3>Accès au restaurant</h3>
+            <div id="map_canvas"></div>
+          </div>
+          <div class="span6">
+            <ul class="unstyled">
+              <li><b>Depuis l'Autoroute A4 – Sortie Nogent-sur-Marne.</b> Puis tourner 3 fois à droite pour arriver sur les Bords de Marne où le Restaurant est situé.</li>
+              <li><b>Depuis le RER <i class="sprite rer-e">E</i> - Nogent Le Perreux.</b> Descendre le boulevard Albert 1er puis prendre l'avenue Kleber. (visualiser la carte ci-contre).</li>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span6">
+            <h3>Privatisation pour un événement ?</h3>
+            <p>
+              Baptème, Communion, Anniversaire, Mariage.
+            </p>
+            <p>
+              Nous étudions avec vous la possibilité de vous accueillir chaleureusement.
+            </p>
+            <p>
+              <strong>Contactez-nous au 01 48 71 17 43.</strong>
+            </p>
+          </div>
+          <div class="span6">
+            <div id="infosCarousel" class="carousel slide hidden-phone">
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item">
+                  <img src="img/slides/infos/leverger-la-salle.jpg" alt="Restaurant LE VERGER - une salle décorée 1900" width="570" height="380">
+                </div>
+                <div class="item">
+                  <img src="img/slides/infos/verger-salle-soiree.jpg" alt="Restaurant LE VERGER - une salle pour votre soirée" width="570" height="380">
+                </div>
+                <div class="item">
+                  <img src="img/slides/infos/verger-bar-lumineux.jpg" alt="Restaurant LE VERGER - un bar lumineux pour les grandes soirées." width="570" height="380">
+                </div>
+              </div>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#infosCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#infosCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer role="contentinfo">
+        <p>LE VERGER - 10 quai du port - 94130 Nogent sur Marne - 01 48 71 17 43</p>
+        <p>Les cartes bancaires ne sont pas acceptées.</p>
+        <nav>
+          <ul>
+            <li>
+              Tous droits réservés
+            </li>
+            <li>
+              -
+              <a rel="nofollow" href="mentions-legales.html">Mentions légales</a>
+            </li>
+            <li>
+              -
+              <a href="mailto:contact@restaurant-leverger.fr">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div> <!-- /container -->
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="js/libs/bootstrap/bootstrap.min.js"></script>
+  <script>
+  	var _gaq=[['_setAccount','UA-22379557-1'],['_trackPageview']];
+  	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  	s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCgraFoh8gLGheerzOgfKo4gvqq2XVfCnQ&sensor=true"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
