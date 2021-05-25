@@ -352,32 +352,32 @@ FileETag None
 <IfModule mod_rewrite.c>
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
-  RewriteRule ^tag/(.*)$ http://restaurant-leverger.fr/index.html [R=permanent,L]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+  RewriteRule ^tag/(.*)$ https://restaurant-leverger.fr/index.html [R=permanent,L]
 
-  RedirectPermanent /informations-pratiques http://restaurant-leverger.fr/infos.html
-  RedirectPermanent /une-cuisine-traditionnelle-francaise http://restaurant-leverger.fr/carte.html
-  RedirectPermanent /un-restaurant-calme-pour-vos-sorties-en-couple-en-famille-ou-entre-amis http://restaurant-leverger.fr/index.html
-  RedirectPermanent /reouverture-2011 http://restaurant-leverger.fr/index.html
-  RedirectPermanent /ouverture-le-lundi-25-avril-2011 http://restaurant-leverger.fr/index.html
-  RedirectPermanent /ouverture-de-la-saison http://restaurant-leverger.fr/index.html
-  RedirectPermanent /lhistoire-de-la-guinguette http://restaurant-leverger.fr/index.html
-  RedirectPermanent /mentions-legales http://restaurant-leverger.fr/mentions-legales.html
-  RedirectPermanent /la-carte http://restaurant-leverger.fr/carte.html
-  RedirectPermanent /contact/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /une-cuisine-traditionnelle-francaise/feed http://restaurant-leverger.fr/carte.html
-  RedirectPermanent /un-restaurant-calme-pour-vos-sorties-en-couple-en-famille-ou-entre-amis/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /livre-or/?gb_page=write http://restaurant-leverger.fr/index.html
-  RedirectPermanent /ouverture-le-lundi-25-avril-2011/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /ouverture-de-la-saison/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /ouvert-le-jeudi-2-juin-2011/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /livre-dor/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /lhistoire-de-la-guinguette/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /la-carte/feed http://restaurant-leverger.fr/carte.html
-  RedirectPermanent /informations-pratiques/feed http://restaurant-leverger.fr/infos.html
-  RedirectPermanent /la-detente-au-coeur-dun-%C2%AB-verger-%C2%BB/feed http://restaurant-leverger.fr/index.html
-  RedirectPermanent /livre-or?gb_page=read http://restaurant-leverger.fr/index.html
-  RedirectPermanent /livre-or/?gb_page=read http://restaurant-leverger.fr/index.html
+  RedirectPermanent /informations-pratiques https://restaurant-leverger.fr/infos.html
+  RedirectPermanent /une-cuisine-traditionnelle-francaise https://restaurant-leverger.fr/carte.html
+  RedirectPermanent /un-restaurant-calme-pour-vos-sorties-en-couple-en-famille-ou-entre-amis https://restaurant-leverger.fr/index.html
+  RedirectPermanent /reouverture-2011 https://restaurant-leverger.fr/index.html
+  RedirectPermanent /ouverture-le-lundi-25-avril-2011 https://restaurant-leverger.fr/index.html
+  RedirectPermanent /ouverture-de-la-saison https://restaurant-leverger.fr/index.html
+  RedirectPermanent /lhistoire-de-la-guinguette https://restaurant-leverger.fr/index.html
+  RedirectPermanent /mentions-legales https://restaurant-leverger.fr/mentions-legales.html
+  RedirectPermanent /la-carte https://restaurant-leverger.fr/carte.html
+  RedirectPermanent /contact/feed https://restaurant-leverger.fr/index.html
+  RedirectPermanent /une-cuisine-traditionnelle-francaise/feed https://restaurant-leverger.fr/carte.html
+  RedirectPermanent /un-restaurant-calme-pour-vos-sorties-en-couple-en-famille-ou-entre-amis/feed https://restaurant-leverger.fr/index.html
+  RedirectPermanent /livre-or/?gb_page=write https://restaurant-leverger.fr/index.html
+  RedirectPermanent /ouverture-le-lundi-25-avril-2011/feed https://restaurant-leverger.fr/index.html
+  RedirectPermanent /ouverture-de-la-saison/feed https://restaurant-leverger.fr/index.html
+  RedirectPermanent /ouvert-le-jeudi-2-juin-2011/feed https://restaurant-leverger.fr/index.html
+  RedirectPermanent /livre-dor/feed https://restaurant-leverger.fr/index.html
+  RedirectPermanent /lhistoire-de-la-guinguette/feed https://restaurant-leverger.fr/index.html
+  RedirectPermanent /la-carte/feed https://restaurant-leverger.fr/carte.html
+  RedirectPermanent /informations-pratiques/feed https://restaurant-leverger.fr/infos.html
+  RedirectPermanent /la-detente-au-coeur-dun-%C2%AB-verger-%C2%BB/feed https://restaurant-leverger.fr/index.html
+  RedirectPermanent /livre-or?gb_page=read https://restaurant-leverger.fr/index.html
+  RedirectPermanent /livre-or/?gb_page=read https://restaurant-leverger.fr/index.html
 </IfModule>
 # ----------------------------------------------------------------------
 
@@ -389,7 +389,7 @@ FileETag None
 # <IfModule mod_rewrite.c>
 #   RewriteCond %{HTTPS} !=on
 #   RewriteCond %{HTTP_HOST} !^www\..+$ [NC]
-#   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+#   RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # </IfModule>
 
 
@@ -502,7 +502,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 # If your server is not already configured as such, the following directive
 # should be uncommented in order to set PHP's register_globals option to OFF.
 # This closes a major security hole that is abused by most XSS (cross-site
-# scripting) attacks. For more information: http://php.net/register_globals
+# scripting) attacks. For more information: https://php.net/register_globals
 #
 # IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :
 #

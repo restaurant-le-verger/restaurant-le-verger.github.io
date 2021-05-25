@@ -10,4 +10,4 @@ Disallow: /img/glyphicons-halflings-white.png
 Disallow: /img/glyphicons-halflings.png
 Disallow: /mentions-legales.html
 
-Sitemap: http://restaurant-leverger.fr/sitemap.xml.gz
+Sitemap: https://restaurant-leverger.fr/sitemap.xml.gz

@@ -3,7 +3,7 @@
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
@@ -2098,7 +2098,7 @@ a.thumbnail:hover {
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
@@ -2235,9 +2235,9 @@ a.thumbnail:hover {
     width: 100%;
     min-height: 28px;
     /* Make inputs at least the height of their button counterpart */
-  
+
     /* Makes inputs behave like true block-level elements */
-  
+
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
